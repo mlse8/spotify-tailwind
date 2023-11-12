@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./assets/spotify.png" type="image/x-icon">
+    <!-- <link href="https://fonts.cdnfonts.com/css/iciel-gotham" rel="stylesheet"> -->
+    <title>Spotify Premium</title>
+</head>
+<body>
+    <div class="w-full bg-black">
+        <nav class="max-w-6xl flex justify-between m-auto px-4 py-2 relative md:px-6 md:py-5">
+            <a class="flex items-center gap-1 text-lg font-bold text-white md:text-2xl" href="#">
+                <img class="w-7 lg:w-10" src="assets/spotify-logo.png" alt="logo">
+                Spotify
+            </a>
+            <div class="flex justify-center items-center gap-6">
+                <div id="menu" class="w-full max-w-md h-screen flex flex-col justify-between px-9 py-9 absolute top-0 right-0 bg-black hidden md:w-fit md:h-fit md:inline-block md:p-0 md:static">
+                    <button id="btn-close" class="absolute top-3 right-3 text-white md:hidden"><span class="iconify" data-icon="material-symbols:close" data-width="30" data-height="30"></span></button>
+                    <ul class="md:flex md:gap-8">
+                        <li class="pb-6 text-3xl font-bold text-white hover:text-[#1ED760] md:p-0 md:text-base"><a href="#">Premium</a></li>
+                        <li class="pb-6 text-3xl font-bold text-white hover:text-[#1ED760] md:p-0 md:text-base"><a href="#">Ayuda</a></li>
+                        <li class="pb-6 text-3xl font-bold text-white hover:text-[#1ED760] md:p-0 md:text-base"><a href="#">Descargar</a></li>
+                        <hr class="w-4 h-0.5 pb-6 md:pb-0 md:rotate-90 md:translate-y-3">
+                        <div id="account" class="md:pl-4 md:pr-10 md:py-3 md:absolute md:top-[4.5rem] md:right-3 md:bg-white md:rounded md:shadow-lg md:hidden md:before:border-l-[1rem] md:before:border-l-transparent md:before:border-r-[1rem] md:before:border-r-transparent md:before:border-b-[1rem] md:before:border-b-white md:before:absolute md:before:top-[-.8rem] md:before:right-2">
+                            <li class="pb-6 text-2xl text-white hover:text-[#1ED760] md:font-bold md:text-base md:text-black md:pb-1"><a href="#">Cuenta</a></li>
+                            <li class="pb-6 text-2xl text-white hover:text-[#1ED760] md:font-bold md:text-base md:text-[#919496] md:pb-1"><a href="#">Cerrar sesión</a></li>
+                        </div>
+                    </ul>
+                    <a class="flex items-center gap-1 py-2 text-lg font-bold text-white md:hidden" href="#"><img class="w-7 lg:w-10" src="assets/spotify-logo.png" alt="logo">Spotify</a>
+                </div>
+                <div class="flex flex-row-reverse gap-2">
+                    <button id="btn-menu" class="text-white md:hidden"><span class="iconify" data-icon="material-symbols:menu" data-width="30" data-height="30"></span></button>
+                    <button id="profile" class="flex items-center gap-4">
+                        <img class="w-9 h-9" src="./assets/nina.png" alt="logo-perfil">
+                        <a class="flex flex-row-reverse items-center gap-2 font-bold text-white hover:text-[#1ED760] hidden md:flex"><span id="down" class="iconify text-white hover:text-[#1ED760]" data-icon="mingcute:down-line"></span><span id="up" class="iconify text-white hover:text-[#1ED760] hidden" data-icon="mingcute:up-line"></span>Perfil</a>g
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <header class="bg-[#1D75DE]">
+        <div class="max-w-6xl flex flex-col justify-center gap-5 m-auto px-4 pt-12 pb-6 md:gap-9 md:px-6 md:pt-20 md:pb-10">
+            <h1 class="text-2xl leading-7 font-bold text-white md:text-5xl">Escuchá música sin límites</h1>
+            <p class="text-lg leading-6 font-semibold text-white md:text-2xl">Reproducí millones de canciones sin anuncios, on-demand y en modo offline.</p>
+            <div class="flex flex-col gap-3 font-semibold text-white md:flex-row">
+                <button class="px-8 py-2 bg-[#191414] border-2 border-[#191414] rounded-3xl hover:bg-[#0B0909] hover:border-[#0B0909]">Empezar</button>
+                <button class="px-8 py-2 bg-transparent border-2 border-white rounded-3xl">Ver planes</button>
+            </div>
+            <a class="mt-6 text-xs text-white underline" href="#">Se aplican Términos y Condiciones</a>
+        </div>
+    </header>
+    <main>
+        <section class="bg-white">
+            <div class="max-w-6xl m-auto px-4 py-9 md:px-6 md:py-20">
+                <h2 class="font-bold text-2xl text-center md:text-4xl">Beneficios de Premium</h2>
+                <div class="w-full flex flex-col gap-6 mt-6 md:flex-row md:justify-between md:flex-wrap md:mt-20">
+                    <div class="flex gap-4 md:w-[45%] xl:max-w-[20%] xl:flex-col xl:items-center">
+                        <div class="w-24 h-24 bg-[url('https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f')] bg-no-repeat bg-contain bg-center xl:w-32 xl:h-32"></div>
+                        <div class="flex-1">
+                            <p class="mb-3 font-bold text-xl xl:text-center">Descargá tu música.</p>
+                            <p class="text-base xl:text-center">Escuchala donde quieras.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 md:w-[45%] xl:max-w-[20%] xl:flex-col xl:items-center">
+                        <div class="w-24 h-24 bg-[url('https://i.scdn.co/image/ab671c3d0000f43098292b95d24a697c20df5137')] bg-no-repeat bg-contain bg-center xl:w-32 xl:h-32"></div>
+                        <div class="flex-1">
+                            <p class="mb-3 font-bold text-xl xl:text-center">Escuchá música sin anuncios.</p>
+                            <p class="text-base xl:text-center">Disfrutá tu música sin interrupciones.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 md:w-[45%] xl:max-w-[20%] xl:flex-col xl:items-center">
+                        <div class="w-24 h-24 bg-[url('https://i.scdn.co/image/ab671c3d0000f4306998d3ffd58aad6da6afdf67')] bg-no-repeat bg-contain bg-center xl:w-32 xl:h-32"></div>
+                        <div class="flex-1">
+                            <p class="mb-3 font-bold text-xl xl:text-center">Escuchá la canción que quieras.</p>
+                            <p class="text-base xl:text-center">Incluso en dispositivos móviles.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 md:w-[45%] xl:max-w-[20%] xl:flex-col xl:items-center">
+                        <div class="w-24 h-24 bg-[url('https://i.scdn.co/image/ab671c3d0000f430cd6c528745e510c5be63a012')] bg-no-repeat bg-contain bg-center xl:w-32 xl:h-32"></div>
+                        <div class="flex-1">
+                            <p class="mb-3 font-bold text-xl xl:text-center">Saltos ilimitados de canciones.</p>
+                            <p class="text-base xl:text-center">Solo pasá a la siguiente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#EFEFEF]">
+            <div class="max-w-6xl m-auto px-4 py-9 md:px-6 md:py-20">
+                <h2 class="font-bold text-3xl text-center md:text-4xl">Elegí tu plan Premium</h2>
+                <p class="my-2.5 text-center">Escuchá contenido sin límites en tu celular, parlante y otros dispositivos.</p>
+                <div class="flex justify-center gap-1 mt-4">
+                    <ul class="flex justify-center gap-1">
+                        <li class="w-8 h-5 bg-[url('https://content-tooling.spotifycdn.com/images/add05763-86c0-4d3d-9f7b-1a472c698aad_visa.svg')] bg-no-repeat bg-contain bg-center"></li>
+                        <li class="w-8 h-5 bg-[url('https://content-tooling.spotifycdn.com/images/f6a00e9b-0092-4600-a50c-0d85ac3bfae6_mastercard.svg')] bg-no-repeat bg-contain bg-center"></li>
+                        <li class="w-8 h-5 bg-[url('https://content-tooling.spotifycdn.com/images/9b508127-b8e1-4d3f-b791-9b3a93a384c4_amex.svg')] bg-no-repeat bg-contain bg-center"></li>
+                        <li class="w-8 h-5 bg-[url('https://content-tooling.spotifycdn.com/images/ece7b47d-24d7-4df3-aa07-0b57f87b2e79_naranja.svg')] bg-no-repeat bg-contain bg-center"></li>
+                        <li class="w-8 h-5 bg-[url('https://content-tooling.spotifycdn.com/images/10a27782-9c87-4e4e-a2b9-7875659bf29f_cabal.svg')] bg-no-repeat bg-contain bg-center"></li>
+                    </ul>
+                    <div class="relative">
+                        <span id="more" class="underline">+ 4 más</span>
+                        <ul id="more-cards" class="flex justify-center gap-1 p-2 absolute translate-x-[-30%] bg-white rounded-lg shadow-lg hidden">
+                            <li class="w-8 h-5 bg-[url('https://content-tooling.spotifycdn.com/images/78aa23e9-0ea0-4011-b8aa-e2af5b6b209f_credimas.svg')] bg-no-repeat bg-contain bg-center"></li>
+                            <li class="w-8 h-5 bg-[url('https://content-tooling.spotifycdn.com/images/1e627aaf-cb6b-475a-ae8f-76d105245f9f_diners.svg')] bg-no-repeat bg-contain bg-center"></li>
+                            <li class="w-8 h-5 bg-[url('https://content-tooling.spotifycdn.com/images/4a8c7677-a099-40c0-b492-ce9a50905906_rapi-pago.svg')] bg-no-repeat bg-contain bg-center"></li>
+                            <li class="w-8 h-5 bg-[url('https://content-tooling.spotifycdn.com/images/e7c89451-7f35-4ab0-8b61-613bd6b0408f_pago-facil.svg')] bg-no-repeat bg-contain bg-center"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center gap-4 mt-12 xl:h-[660px] xl:flex-row xl:items-stretch">
+                    <div class="max-w-[400px] flex-1 flex flex-col p-5 bg-white rounded-lg shadow-xl xl:h-full">
+                        <div>
+                            <h3 class="mb-1 font-bold text-2xl">Individual</h3>
+                            <p class="mb-0.5">$599,00*** al mes</p>
+                            <p class="mb-5">1 cuenta</p>
+                            <hr class="h-0.5 bg-black">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between mt-8">
+                            <ul class="mb-5">
+                                <li class="flex gap-2">
+                                    <span class="iconify" data-icon="ic:baseline-check" data-width="28" data-height="28"></span>
+                                    <p class="flex-1">Música sin anuncios</p>
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="iconify" data-icon="ic:baseline-check" data-width="28" data-height="28"></span>
+                                    <p class="flex-1">Escuchá tus canciones en cualquier lugar, incluso sin conexión</p>
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="iconify" data-icon="ic:baseline-check" data-width="28" data-height="28"></span>
+                                    <p class="flex-1">Reproducción on-demand</p>
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="iconify" data-icon="ic:baseline-check" data-width="28" data-height="28"></span>
+                                    <p class="flex-1">Prepagá o suscribite</p>
+                                </li>
+                            </ul>
+                            <div class="xl:mb-12">
+                                <button class="w-full px-8 py-2 font-semibold text-white bg-[#191414] border-2 border-[#191414] rounded-3xl hover:bg-[#0B0909] hover:border-[#0B0909] hover:scale-105">Empezar</button>
+                                <p class="mt-3.5 text-xs text-[#535353]">***$ 599,00 al mes + impuestos (incluye IVA [21%], PAIS [8%], IG/IBP [45%], que vas a ver en tu extracto bancario). <a class="underline" href="#">Se aplican Términos y Condiciones.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-[400px] flex-1 flex flex-col p-5 bg-white rounded-lg shadow-xl xl:h-full">
+                        <div>
+                            <h3 class="mb-1 font-bold text-2xl">Duo</h3>
+                            <p class="mb-0.5">$799,00*** al mes</p>
+                            <p class="mb-5">2 cuentas</p>
+                            <hr class="h-0.5 bg-black">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between mt-8">
+                            <ul class="mb-5">
+                                <li class="flex gap-2">
+                                    <span class="iconify" data-icon="ic:baseline-check" data-width="28" data-height="28"></span>
+                                    <p class="flex-1">2 cuentas Premium para parejas que conviven</p>
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="iconify" data-icon="ic:baseline-check" data-width="28" data-height="28"></span>
+                                    <p class="flex-1">Reproducción de música en modo offline, sin anuncios y on-demand</p>
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="iconify" data-icon="ic:baseline-check" data-width="28" data-height="28"></span>
+                                    <p class="flex-1">Prepagá o suscribite</p>
+                                </li>
+                            </ul>
+                            <div class="xl:mb-12">
+                                <button class="w-full px-8 py-2 font-semibold text-white bg-[#191414] border-2 border-[#191414] rounded-3xl hover:bg-[#0B0909] hover:border-[#0B0909] hover:scale-105">Empezar</button>
+                                <p class="mt-3.5 text-xs text-[#535353]">***$ 799,00 al mes + impuestos (incluye IVA [21%], PAIS [8%], IG/IBP [45%], que vas a ver en tu extracto bancario). <a class="underline" href="#">Se aplican Términos y Condiciones.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-[400px] flex-1 flex flex-col p-5 bg-white rounded-lg shadow-xl xl:h-full">
+                        <div>
+                            <h3 class="mb-1 font-bold text-2xl">Familiar</h3>
+                            <p class="mb-0.5">$999,00*** al mes</p>
+                            <p class="mb-5">Hast 6 cuentas</p>
+                            <hr class="h-0.5 bg-black">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between mt-8">
+                            <ul class="mb-5">
+                                <li class="flex gap-2">
+                                    <span class="iconify" data-icon="ic:baseline-check" data-width="28" data-height="28"></span>
+                                    <p class="flex-1">6 cuentas Premium para familiares que viven en el mismo domicilio</p>
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="iconify" data-icon="ic:baseline-check" data-width="28" data-height="28"></span>
+                                    <p class="flex-1">Bloqueo de música con contenido explícito</p>
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="iconify" data-icon="ic:baseline-check" data-width="28" data-height="28"></span>
+                                    <p class="flex-1">Reproducción de música en modo offline, sin anuncios y on-demand</p>
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="iconify" data-icon="ic:baseline-check" data-width="28" data-height="28"></span>
+                                    <p class="flex-1">Spotify Kids: una aplicación independiente creada solo para niños</p>
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="iconify" data-icon="ic:baseline-check" data-width="28" data-height="28"></span>
+                                    <p class="flex-1">Prepagá o suscribite</p>
+                                </li>
+                            </ul>
+                            <div class="xl:mb-12">
+                                <button class="w-full px-8 py-2 font-semibold text-white bg-[#191414] border-2 border-[#191414] rounded-3xl hover:bg-[#0B0909] hover:border-[#0B0909] hover:scale-105">Empezar</button>
+                                <p class="mt-3.5 text-xs text-[#535353]">***$ 999,00 al mes + impuestos (incluye IVA [21%], PAIS [8%], IG/IBP [45%], que vas a ver en tu extracto bancario). <a class="underline" href="#">Se aplican Términos y Condiciones.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-[400px] flex-1 flex flex-col p-5 bg-white rounded-lg shadow-xl xl:h-full">
+                        <div>
+                            <h3 class="mb-1 font-bold text-2xl">Estudiantes</h3>
+                            <p class="mb-0.5">$329,00*** al mes</p>
+                            <p class="mb-5">1 cuenta</p>
+                            <hr class="h-0.5 bg-black">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between mt-8">
+                            <ul class="mb-5">
+                                <li class="flex gap-2">
+                                    <span class="iconify" data-icon="ic:baseline-check" data-width="28" data-height="28"></span>
+                                    <p class="flex-1">Descuento especial para estudiantes universitarios que cumplan con los requisitos</p>
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="iconify" data-icon="ic:baseline-check" data-width="28" data-height="28"></span>
+                                    <p class="flex-1">Música sin anuncios</p>
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="iconify" data-icon="ic:baseline-check" data-width="28" data-height="28"></span>
+                                    <p class="flex-1">Escuchá tus canciones en cualquier lugar, incluso sin conexión</p>
+                                </li>
+                                <li class="flex gap-2">
+                                    <span class="iconify" data-icon="ic:baseline-check" data-width="28" data-height="28"></span>
+                                    <p class="flex-1">Reproducción on-demand</p>
+                                </li>
+                            </ul>
+                            <div>
+                                <button class="w-full px-8 py-2 font-semibold text-white bg-[#191414] border-2 border-[#191414] rounded-3xl hover:bg-[#0B0909] hover:border-[#0B0909] hover:scale-105">Empezar</button>
+                                <p class="mt-3.5 text-xs text-[#535353]">*** $ 329,00 al mes + impuestos (incluye IVA [21%], PAIS [8%], IG/IBP [45%], que vas a ver en tu extracto bancario). El plan solo está disponible para estudiantes de instituciones de educación superior aprobadas. <a class="underline" href="#">Se aplican Términos y Condiciones.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="font-semibold bg-black">
+        <div class="max-w-6xl m-auto pt-12 pb-5 px-4 md:px-6 lg:flex lg:justify-between lg:items-start lg:flex-wrap lg:pt-24 lg:pb-20">
+            <div class="flex lg:w-1/4">
+                <a class="flex items-center gap-1 text-lg font-bold text-white md:text-2xl" href="#">
+                    <img class="w-7 lg:w-10" src="assets/spotify-logo.png" alt="logo">
+                    Spotify
+                </a>
+            </div>
+            <div class="flex flex-col gap-12 mt-12 md:flex-row md:justify-between lg:w-1/2 lg:mt-0">
+                <div class="flex flex-col gap-6 text-white md:w-1/3 lg:w-fit">
+                    <h4 class="text-[#919496]">Compañia</h4>
+                    <a class="hover:text-[#1ED760]" href="#">Acerca de</a>
+                    <a class="hover:text-[#1ED760]" href="#">Empleo</a>
+                    <a class="hover:text-[#1ED760]" href="#">For the Record</a>
+                </div>
+                <div class="flex flex-col gap-6 text-white md:w-1/3 lg:w-fit">
+                    <h4 class="text-[#919496]">Comunidades</h4>
+                    <a class="hover:text-[#1ED760]" href="#">Para artistas</a>
+                    <a class="hover:text-[#1ED760]" href="#">Desarrolladores</a>
+                    <a class="hover:text-[#1ED760]" href="#">Publicidad</a>
+                    <a class="hover:text-[#1ED760]" href="#">Inversionistas</a>
+                    <a class="hover:text-[#1ED760]" href="#">Proveedores</a>
+                </div>
+                <div class="flex flex-col gap-6 text-white md:w-1/3 lg:w-fit">
+                    <h4 class="text-[#919496]">Enlaces útiles</h4>
+                    <a class="hover:text-[#1ED760]" href="#">Ayuda</a>
+                    <a class="hover:text-[#1ED760]" href="#">Reproductor web</a>
+                    <a class="hover:text-[#1ED760]" href="#">App móvil gratis</a>
+                </div>
+            </div>
+            <div class="flex gap-4 mt-32 text-white lg:w-1/4 lg:justify-end lg:mt-0">
+                <a class="w-11 h-11 flex items-center justify-center rounded-full bg-[#222326] hover:text-[#1ED760]" href="#"><span class="iconify" data-icon="mdi:instagram" data-width="30" data-height="30"></span></a>
+                <a class="w-11 h-11 flex items-center justify-center rounded-full bg-[#222326] hover:text-[#1ED760]" href="#"><span class="iconify" data-icon="mdi:twitter" data-width="30" data-height="30"></span></a>
+                <a class="w-11 h-11 flex items-center justify-center rounded-full bg-[#222326] hover:text-[#1ED760]" href="#"><span class="iconify" data-icon="ri:facebook-fill" data-width="30" data-height="30"></span></a>
+            </div>
+            <div class="flex justify-end py-4 text-[10px] text-[#919496] lg:w-full lg:mt-16 lg:text-xs">
+                <a class="flex items-center gap-1.5" href="#"><span class="iconify" data-icon="mdi:world" data-width="14" data-height="14"></span>Argentina</a>
+            </div>
+            <div class="flex gap-12 text-[10px] text-[#919496] lg:w-full lg:text-xs">
+                <div class="flex-1 flex flex-wrap gap-5">
+                    <a href="#">Legal</a>
+                    <a href="#">Centro de privacidad</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">Sobre los anuncios</a>
+                    <a href="#">Accesibilidad</a>
+                </div>
+                <p>&copy; 2023 Spotify AB</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
